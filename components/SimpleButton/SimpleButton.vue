@@ -2,10 +2,16 @@
   export default {
     name: 'SimpleButton',
     props: {
+      /**
+       * The page to go to when button i clicked.
+       */
       to: {
         type: String,
         required: true
       },
+      /**
+       * The label describing what the linked page is about.
+       */
       label: {
         type: String,
         required: true

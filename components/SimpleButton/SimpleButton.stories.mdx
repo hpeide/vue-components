@@ -1,0 +1,27 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import SimpleButton from './SimpleButton'
+
+<Meta
+  title='SimpleButton'
+  component={SimpleButton}
+/>
+
+# SimpleButton
+
+<Props of={SimpleButton} />
+
+## The Feature card
+
+<Preview>
+  <Story name='Default' height="60px">{{
+    components: {
+      SimpleButton
+    },
+    template: `
+      <SimpleButton
+        to="http://www.hpeide.no"
+        label="Read more"
+      />
+    `
+  }}</Story>
+</Preview>
